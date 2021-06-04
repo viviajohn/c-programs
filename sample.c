@@ -9,7 +9,9 @@ int main()
   printf("\nEnter two numbers: ");
   scanf("%d%d", &a, &b);
 
-  printf("\n%d + %d = %d", a, b, a+b);
+  c = a + b;
+
+  printf("\n%d + %d = %d", a, b, c);
 }
 
 

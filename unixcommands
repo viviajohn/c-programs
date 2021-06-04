@@ -1,0 +1,64 @@
+creating/editting a file
+  gedit file.c / touch file.c
+
+compiling a file
+  cc file.c
+
+executing a file
+  ./a.out
+
+
+Stages of Compilation
+
+1. Preprocessor: cc -E hello.c -o hello.i
+  	a. Removal of comments
+    b. expansion of macros
+    c. interpretation of preprocessor directives
+    d. expansion of header files
+
+2. Compiler: cc -S hello.i
+  preprocessed code -> assembly code
+
+3. Assembler: cc -c hello.s
+  assmebly code -> object code
+
+4. Linker: cc hello.o
+  object code of header file is linked to object code of the program 
+
+  EXECUTE YOUR PROGRAM
+
+
+UNIX COMMANDS
+
+GENERAL COMMANDS
+1. whoami: details of account holder
+2. date: date and time of present day
+3. cal: calender of present months
+4. cal <year>: gives calender of <year>
+5. clear: clears the console screen
+6. history: shows history of executed COMMANDS
+
+DIRECTORY COMMANDS
+1. pwd: present working directory
+2. mkdir <dname>: creates a directory <dname>
+3. cd <dname>: goes inside directory <dname>
+4. cd ..: go one step 
+5. ls: list all files and directories in the pwd
+6. rmdir <dname>: deletes an empty directory <dname>
+7. rm -R <dname>: deletes a non empty directory <dname>
+
+FILE COMMANDS
+1. touch <fname.ext>: creates a file <fname.ext>
+2. cat>fname.ext: opens the file for editting(overwriting) in the console (CTRL + C)
+3. cat <fname.ext>: shows contents on <fname.ext> in console
+4. cp <source.ext> <dest.ext>: copying contents from <source.ext> to <dest.ext>
+5. mv <source.ext> <dest.ext>: moving contents from <source.ext> to <dest.ext> (deleting the file <source.ext>)
+6. mv <fname.ext> <dname>: moves file <fname.ext> to the directory <dname>
+7. cp <fname.ext> <dname>: copies file <fname.ext> to the directory <dname>
+8. rm <fname.ext>: deletes the file <fname.ext>
+
+
+ACCESS SPECIFIERS
+int %d
+float %f
+char %c

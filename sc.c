@@ -9,40 +9,41 @@ int main()
 
   printf("\nEnter two numbers: ");
   scanf("%d%d", &a, &b);
-  printf("\nEnter operator: ");
-  scanf(" %c", &op);
-  
-  if(op == '+')
-    printf("\nSum = %d", a+b);
-  
-  else if(op == '-')
-    printf("\nDifference = %d", a-b);
 
-  else if(op == '*')
-    printf("\nProduct = %d", a*b);
+  printf("\nEnter the operator: ");
+  scanf(" %c", &op);
+
+  if( op == '+' )
+    printf("\n Sum = %d", a + b);
   
-  else if(op == '/')
+  else if ( op == '-' )
+    printf("\n Difference = %d", a - b);
+  
+  else if ( op == '*' )
+    printf("\n Product = %d", a * b);
+  
+  else if ( op == '/' )
   {
-    if(b==0)
+    if( b == 0 )
     {
-      printf("\nDenomiator Zero Error!");
+      printf("\nDenominator ZERO error!");
       return 0;
     }
     else
-      printf("\nQuotient = %f", a/(float) b);
+      printf("\n Quotient = %f", a/(float)b ); 
   }
 
-  else if(op == '%')
+  else if( op == '%' )
   {
-    if(b==0)
+    if (b == 0)
     {
-      printf("\nDenominator Zero Error!");
+      printf("\nDenominator ZERO error!");
       return 0;
     }
-    else
-      printf("\nRemainder = %d", a%b);
+    else  
+      printf("\n Remainder = %d", a % b);
   }
 
   else
-    printf("\nInvalid Operator!");
+    printf("\nInvalid operator!");
 }

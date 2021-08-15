@@ -8,7 +8,7 @@ int main()
   float a, b, c, D, r1, r2, r, rp, ip;
 
   printf("\nEnter the coefficients: ");
-  scanf("%f%f%f", &a, &b, &c);
+  scanf("%f%f%f", &a, &b, &c); // 1 3 1
 
   if(a==0)
   {

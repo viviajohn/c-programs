@@ -1,5 +1,4 @@
 //Program to declare and print 2D array
-
 #include<stdio.h>
 
 int main()
@@ -20,7 +19,6 @@ int main()
     }
   }
   
-  
   printf("\nArray elements are: \n");
   for(i=0;i<m;i++)
   {
@@ -28,7 +26,6 @@ int main()
     {
       printf("%d ", A[i][j]);
     }
-
     printf("\n");
   }
 }

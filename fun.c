@@ -1,4 +1,4 @@
-//Basics of functions
+//Program to add two numbers
 
 #include<stdio.h>
 
@@ -12,6 +12,7 @@ int main()
   scanf("%d%d", &a, &b);
 
   printf("\nSum = %d", sum(a, b));
+  
 }
 
 int sum(int c, int d)
